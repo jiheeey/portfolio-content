@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji Hee Yoon's Personal Work Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+    <header>
+      <nav class="menu">
+        <h1 class="logo">Ji Hee Yoon</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="digital.html">Digital Works</a></li>
+          <li><a href="arts.html">Arts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+ 
+    <main id="arts">
+      <div class="full-img" id="fullImgBox">
+        <img src = "images/afterlife.png" alt ="afterlife poster" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+      </div>
+      <div class="img-gallery">
+        <img src = "images/arts/window_dark.png" alt ="Illustration work" onclick="openFullImg(this.src)">
+        <img src = "images/arts/window_bright.png" alt ="Illustration work" onclick="openFullImg(this.src)">
+        <img src = "images/arts/rabbits.png" alt ="drawing of a person with black rabbits" onclick="openFullImg(this.src)">
+        <img src = "images/arts/figure_drawing.jpg" alt ="figure drawing" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia1.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia2.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia3.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia4.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia5.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia6.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia7.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/multimedia8.jpg" alt ="multimedia artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/drawing1.jpg" alt ="drawing artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/drawing2.jpg" alt ="drawing artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/drawing3.jpg" alt ="drawing artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/drawing4.jpg" alt ="drawing artwork" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch1.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch2.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch3.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch4.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch5.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch6.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+        <img src = "images/arts/sketch7.jpg" alt ="compiled sketches" onclick="openFullImg(this.src)">
+
+     
+      </div>
+  
+      <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+  
+        function openFullImg(pic){
+          fullImgBox.style.display = "flex";
+          fullImg.src = pic;
+        }
+  
+        function closeFullImg(){
+          fullImgBox.style.display = "none";
+        }
+      </script>
+  
+        
+      </main>
+  
+        <footer>
+          <p>This is my perosnal work documentation archive. Dates from 2013 to now.</p>
+        </footer>
+    </body>
+  </html>
+  

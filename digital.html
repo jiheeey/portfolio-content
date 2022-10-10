@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji Hee Yoon's Personal Work Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+    <header>
+      <nav class="menu">
+        <h1 class="logo">Ji Hee Yoon</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="digital.html">Digital Works</a></li>
+          <li><a href="arts.html">Arts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main id="digital">
+    <div class="full-img" id="fullImgBox">
+      <img src = "images/afterlife.png" alt ="afterlife poster" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      <img src = "images/afterlife.png" alt ="afterlife poster" onclick="openFullImg(this.src)">
+      <img src = "images/asian_painting.jpg" alt ="asian painting inspired artwork" onclick="openFullImg(this.src)">
+      <img src = "images/brunch.png" alt ="brunch poster" onclick="openFullImg(this.src)">
+      <img src = "images/call_home.jpg" alt ="artwork with telephone" onclick="openFullImg(this.src)">
+      <img src = "images/shuffle1.png" alt ="KANA Shuffle event poster" onclick="openFullImg(this.src)">
+      <img src = "images/electric_shock.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
+      <img src = "images/innocent.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
+      <img src = "images/oyster.png" alt ="oysterfest poster" onclick="openFullImg(this.src)">
+      <img src = "images/purple_juice.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
+      <img src = "images/halo.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
+      <img src = "images/hoyt.jpg" alt ="neighborhood inspired artwork" onclick="openFullImg(this.src)">
+      <img src = "images/purple.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
+      <img src = "images/sewol.jpg" alt ="sewol ferry incident memorial poster" onclick="openFullImg(this.src)">
+      <img src = "images/spring.png" alt ="spring celebration poster" onclick="openFullImg(this.src)">
+      <img src = "images/vase1.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
+      <img src = "images/vase2.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
+      <img src = "images/vase3.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
+      <img src = "images/vase4.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
+      <img src = "images/vase5.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
+      <img src = "images/wanderlust.png" alt ="wanderlust poster" onclick="openFullImg(this.src)">
+    </div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg(){
+        fullImgBox.style.display = "none";
+      }
+    </script>
+
+      
+    </main>
+
+      <footer>
+        <p>This is my perosnal work documentation archive. Dates from 2013 to now.</p>
+      </footer>
+  </body>
+</html>
