@@ -38,11 +38,11 @@ nav ul li a:hover{
 
 .skip{
     position: absolute;
-    color: grey;
+    color: black;
 }
 
-.skip:active{
-    color: black;
+.skip.current:visited{
+    color: grey;
 
 }
 
