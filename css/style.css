@@ -36,6 +36,16 @@ nav ul li a:hover{
     transition: .15s;
 }
 
+.skip{
+    position: absolute;
+    color: grey;
+}
+
+.skip:active{
+    color: black;
+
+}
+
 .img-gallery{
     width: 80%;
     margin: 100px auto 50px;
