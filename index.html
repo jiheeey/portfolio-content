@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ji Hee Yoon's Personal Work Gallery</title>
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
 
 
   <body>
+    
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
     <header>
@@ -24,34 +30,23 @@
     </header>
     
   <main id="main">
-    <div class="full-img" id="fullImgBox">
-      <img src = "images/afterlife.png" alt ="afterlife poster" id="fullImg">
-      <span onclick="closeFullImg()">X</span>
-    </div>
-    <div class="img-gallery">
-      <img src = "images/afterlife.png" alt ="afterlife poster" onclick="openFullImg(this.src)">
-      <img src = "images/asian_painting.jpg" alt ="asian painting inspired artwork" onclick="openFullImg(this.src)">
-      <img src = "images/brunch.png" alt ="brunch poster" onclick="openFullImg(this.src)">
-      <img src = "images/call_home.jpg" alt ="artwork with telephone" onclick="openFullImg(this.src)">
-      <img src = "images/shuffle1.png" alt ="KANA Shuffle event poster" onclick="openFullImg(this.src)">
-      <img src = "images/electric_shock.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
-      <img src = "images/innocent.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
-      <img src = "images/oyster.png" alt ="oysterfest poster" onclick="openFullImg(this.src)">
-      <img src = "images/purple_juice.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
-      <img src = "images/halo.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
-      <img src = "images/hoyt.jpg" alt ="neighborhood inspired artwork" onclick="openFullImg(this.src)">
-      <img src = "images/purple.jpg" alt ="graphic artwork" onclick="openFullImg(this.src)">
-      <img src = "images/sewol.jpg" alt ="sewol ferry incident memorial poster" onclick="openFullImg(this.src)">
-      <img src = "images/spring.png" alt ="spring celebration poster" onclick="openFullImg(this.src)">
-      <img src = "images/vase1.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
-      <img src = "images/vase2.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
-      <img src = "images/vase3.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
-      <img src = "images/vase4.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
-      <img src = "images/vase5.png" alt ="artwork of a vase" onclick="openFullImg(this.src)">
-      <img src = "images/wanderlust.png" alt ="wanderlust poster" onclick="openFullImg(this.src)">
+    <div id="intro_text">
+      <h3>Hello, I'm Ji Hee<h3>
+        <p id="intro">
+          I grew up from an artistic family who encouraged me to observe, experience, and create the abstract beauties in life from an early age. 
+          Very naturally, art has become my dedicated passion and it eventually became my career path to be pursued in college.
+          At Pratt Institute in New York, I studied Communication Design with an emphasis in Graphic Design. 
+          The dynamic, lively, and wild side of New York is always within me now, and my works from those days are here to reflect my experiences.
+          <br>
+          <br>
+          After changing my career path towards User Experience Design, I don't get to revisit and reflect on my artistic works from the pass very often. 
+          Although I enjoy creating practical solutions through my designs, I do also enjoy artistic visual thrills that is quite free from outside (customer) validations but is more focused on personal satisfaction. 
+          I wanted to gather and document all the artworks I have done here, to further use this website as my personal repository of continuing arts practices! 
+          If you're visiting this website from a professional or personal link, I hope you enjoy my works.
+        </p>
     </div>
 
-    <script>
+    <!-- <script>
       var fullImgBox = document.getElementById("fullImgBox");
       var fullImg = document.getElementById("fullImg");
 
@@ -63,11 +58,12 @@
       function closeFullImg(){
         fullImgBox.style.display = "none";
       }
-    </script>
+    </script> -->
       
     </main>
+    <aside>This is my personal work documentation archive. Dates from 2013 to now.</aside>
       <footer>
-        <p>This is my perosnal work documentation archive. Dates from 2013 to now.</p>
+        <p>All images created by Ji Hee Yoon.</p>
       </footer>
   </body>
 </html>

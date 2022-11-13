@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ji Hee Yoon's Personal Work Gallery</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
   </head>
 
 
@@ -25,19 +31,44 @@
 
   <main id="about">
    <div id="profile">
-    <img src = "images/profile.png" alt = "profile photo of me">
+    
+    <img src = "images/Profile.png" alt = "profile photo of me">
    </div>
 
-      <h1>Ji Hee Yoon (Jihee)</h1>
-      <p>
-        I grew up as an aspiring artist, learned design, and now connecting humans with technology. 
-        These are my personal works from my highschool to college days, as well as some photos I took. 
+      <h1>About Me</h1>
+      <a href="mailto: jiheeydesign@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <p id="about_text">
+        Born and raised in Seoul, Korea. Moved to Chicago, IL in 2008, when I was 13 years old. 
+        In 2015, I graduated from high school and moved to NYC to study Communication Design at Pratt Institute.
+        I have been practicing art and design since childhood, in fact, I tried almost all domains of arts and designs.
+        So far, I learned and tried: drawing, illustration, painting, sculpture, ceramics, printmaking, jewelery making, metal work, wood work, 
+        industrial design, photography, fashion design (sewing), 3D, motion graphic, digital/graphic design, and editorial.
+        <br>
+        <br>
+        After New York, I moved back to the mid-west to attend the University of Michigan's graduate program in Human Computer Interaction. 
+        Currently living in Ann Arbor, MI in a small studio flat near downtown. I enjoy cooking, cleaning, going to farmers market, golfing, swimming, dancing, and attending DJ events (sadly there aren't many in Michigan). 
+        I dream to be a DJ someday and produce music as a hobby. If you happen to see this text, you're automatically invited to my DJ party! :) 
+        Feel free to send me an email for connection! 
+        I'm always down for a good coffee chat.
       </p>
+
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
 
       
     </main>
       <footer>
-        <p>Created by Ji Hee Yoon</p>
+        <p>All images created by Ji Hee Yoon.</p>
       </footer>
   </body>
 </html>
