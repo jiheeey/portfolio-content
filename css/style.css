@@ -30,6 +30,7 @@ main{
     height: auto;
     width: 80vw;
     margin: 20px 50px 100px 50px;
+    padding: 10px 0px 0px 0px;
     align-self: center;
     color: black;
 }
