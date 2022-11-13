@@ -211,8 +211,9 @@ h1{
     margin: 5px 50px;
 }
 
-i{
-    margin: 0px 50px;
+#email{
+    margin: 50px;
+    padding: 50px;
 }
 
 @media (max-width: 768px) {
