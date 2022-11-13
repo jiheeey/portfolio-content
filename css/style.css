@@ -92,6 +92,7 @@ nav ul li a:hover{
 .skip{
     position: absolute;
     color: black;
+    display: visible;
 }
 
 .skip.current:visited{
