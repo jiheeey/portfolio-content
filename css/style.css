@@ -7,7 +7,7 @@
 body{
     background: #ecf4fb;
     display: grid;
-    grid-template-columns: (3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
@@ -92,7 +92,6 @@ nav ul li a:hover{
 .skip{
     position: absolute;
     color: black;
-    display: visible;
 }
 
 .skip.current:visited{
@@ -219,7 +218,7 @@ h1{
 
 @media (max-width: 768px) {
     body{
-        grid-template-columns: (1, 1fr);
+        grid-template-columns: 1fr;
 
     }
 }
