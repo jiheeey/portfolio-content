@@ -31,17 +31,18 @@ main{
     width: 80vw;
     margin: 20px 50px 100px 50px;
     align-self: center;
+    color: black;
 }
-h3{
+h2{
     font-size: 50px;
-    color: white;
+    color: black;
     padding: 25px 50px 5px 50px;
 }
 
 #intro{
     padding: 10px 0px 50px 0px;
     font-size: 16px;
-    color: white;
+    color: black;
     
 }
 footer{
@@ -180,6 +181,7 @@ nav ul li a:hover{
     margin: 10px;
     padding: 35px;
     width: 80vw;
+    color: black;
 }
 
 #fs-frm{
@@ -193,6 +195,7 @@ nav ul li a:hover{
     border-radius: 20px;
     padding: 20px;
     margin: 30px;
+    color: black;
 }
 #arts_text{
     font-size: 15px;
@@ -200,6 +203,7 @@ nav ul li a:hover{
     border-radius: 20px;
     padding: 20px;
     margin: 30px;
+    color: black;
 }
 
 h1{
