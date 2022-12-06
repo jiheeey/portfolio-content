@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DPDXJGYTT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0DPDXJGYTT');
+    </script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
@@ -10,65 +19,117 @@
     <title>Ji Hee Yoon's Personal Work Gallery</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
   </head>
 
 
   <body>
     
-
     <header>
-      <nav class="menu">
+      <div class="container">
+        <div id="skip">
+          <a href="#digital">Skip to Main Content</a>
+        </div>
+      </div>
+      <div class="nav-container">
         <h1 class="logo">Ji Hee Yoon</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="digital.html">Digital Works</a></li>
-          <li><a href="arts.html">Arts</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
+        <nav class="menu">
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a href="digital.html" class="nav-link">Digital Works</a></li>
+            <li><a href="arts.html" class="nav-link">Arts</a></li>
+            <li class="active"><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+          <div class="hamburger-container">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+        <script>
+          const hamburger = document.querySelector(".hamburger");
+          const navMenu = document.querySelector(".nav-menu");
+
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            })
+
+          document.querySelectorAll(".nav-link").forEach(n => n.
+          addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          }))
+        </script>
+
+      <script>
+        const items = document.querySelectorAll("ul li");
+        items.forEach((item) => {
+          item.addEventListener("click", () => {
+            document.querySelector("li.active").classList.remove("active");
+            item.classList.add("active");
+          });
+        });
+      </script>
+
     </header>
 
   <main id="about">
    <div id="profile">
-    
-    <img src = "images/Profile.png" alt = "profile photo of me">
+      <img src = "images/Profile.png" alt = "profile photo of me">
    </div>
 
+    <div class="email-container"> 
       <h1>About Me</h1>
-      <a id="email" href="mailto: jiheeydesign@gmail.com">Email me<i class="fa-solid fa-envelope"></i></a>
-      <p id="about_text">
-        Born and raised in Seoul, Korea. Moved to Chicago, IL in 2008, when I was 13 years old. 
-        In 2015, I graduated from high school and moved to NYC to study Communication Design at Pratt Institute.
-        I have been practicing art and design since childhood, in fact, I tried almost all domains of arts and designs.
-        So far, I learned and tried: drawing, illustration, painting, sculpture, ceramics, printmaking, jewelery making, metal work, wood work, 
-        industrial design, photography, fashion design (sewing), 3D, motion graphic, digital/graphic design, and editorial.
-        <br>
-        <br>
-        After New York, I moved back to the mid-west to attend the University of Michigan's graduate program in Human Computer Interaction. 
-        Currently living in Ann Arbor, MI in a small studio flat near downtown. I enjoy cooking, cleaning, going to farmers market, golfing, swimming, dancing, and attending DJ events (sadly there aren't many in Michigan). 
-        I dream to be a DJ someday and produce music as a hobby. If you happen to see this text, you're automatically invited to my DJ party! :) 
-        Feel free to send me an email for connection! 
-        I'm always down for a good coffee chat.
-      </p>
+     <a id="email" href="mailto:jiheeydesign@gmail.com">Email me<i class="fa-solid fa-envelope"></i></a>
+    </div>
 
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <label for="email-address">Email Address</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-          <label for="message">Message</label>
-          <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        </fieldset>
-        <input type="submit" value="Submit">
-      </form>
+    <div class="subgrid-container">
+
+        <p id="about_text">
+            Born and raised in Seoul, Korea. Moved to Chicago, IL in 2008, when I was 13 years old. 
+            In 2015, I graduated from high school and moved to NYC to study Communication Design at Pratt Institute.
+            I have been practicing art and design since childhood, in fact, I tried almost all domains of arts and designs.
+            So far, I learned and tried: drawing, illustration, painting, sculpture, ceramics, printmaking, jewelery making, metal work, wood work, 
+            industrial design, photography, fashion design (sewing), 3D, motion graphic, digital/graphic design, and editorial.
+            <br>
+            <br>
+            After New York, I moved back to the mid-west to attend the University of Michigan's graduate program in Human Computer Interaction. 
+            Currently living in Ann Arbor, MI in a small studio flat near downtown. I enjoy cooking, cleaning, going to farmers market, golfing, swimming, dancing, and attending DJ events (sadly there aren't many in Michigan). 
+            I dream to be a DJ someday and produce music as a hobby. If you happen to see this text, you're automatically invited to my DJ party! :) 
+            Feel free to send me an email for connection! 
+            I'm always down for a good coffee chat.
+        </p>
+
+
+        <div class="form-container">
+          <form
+            action="https://formspree.io/f/xpznokwo"
+            method="POST"
+          >
+          <label>
+            Your email:
+              <input type="email" name="email">
+          </label>
+          <br>
+          <br>
+          <label>
+            Your message:
+              <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+    </div>
 
       
     </main>
       <footer>
-        <div class="skip"><a href="#about">Skip to the Top</a></div>
         <p>All images created by Ji Hee Yoon.</p>
       </footer>
   </body>
